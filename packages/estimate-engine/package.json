@@ -1,0 +1,8 @@
+{
+  "name": "@atomics/estimate-engine",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "dependencies": {
+    "decimal.js": "^10.4.3"
+  }
+}

@@ -1,0 +1,25 @@
+[
+  {
+    "type": "item",
+    "rawName": "Tandoor Unit - 3 basket",
+    "parentSection": "Modular Kitchen",
+    "projectType": "residential_apartment",
+    "sourceFile": "scribd_001.json",
+    "canonicalId": null
+  },
+  {
+    "type": "section",
+    "rawName": "Laminwood Flooring Bedrooms",
+    "projectType": "residential_apartment",
+    "sourceFile": "scribd_001.json",
+    "canonicalId": null
+  },
+  {
+    "type": "item",
+    "rawName": "Engineered wood 8mm AC3",
+    "parentSection": "Laminwood Flooring Bedrooms",
+    "projectType": "residential_apartment",
+    "sourceFile": "scribd_001.json",
+    "canonicalId": null
+  }
+]

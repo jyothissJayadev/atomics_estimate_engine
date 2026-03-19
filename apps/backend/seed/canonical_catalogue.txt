@@ -1,0 +1,603 @@
+# ATOMICS CANONICAL CATALOGUE v1
+# Format: LEVEL|ID|LABEL|PARENT|UNIT|FLEX|TYPES|ALIASES
+# Rate block: @R budget_mr:lr/balanced_mr:lr/premium_mr:lr
+# Qty rule block: @Q type:value  (sm=sqft_mult,wl=wall_linear,cs=count/sqft,fx=fixed)
+# Budget block (L2): @B ratio:mincost
+# Unit codes: sf=sqft rf=rft n=nos ls=lumpsum
+# Type codes: A=residential_apartment V=villa O=commercial_office R=retail_shop H=hospitality C=clinic_healthcare E=education I=industrial_warehouse
+# Flex: 1=flexible 0=anchor(non-flexible)
+# City multipliers: bangalore:1.00,mumbai:1.22,delhi:1.18,gurgaon:1.18,noida:1.15,hyderabad:0.97,pune:1.05,chennai:1.02,kolkata:0.92,ahmedabad:0.88,surat:0.85,jaipur:0.88,lucknow:0.82,chandigarh:0.90,kochi:0.95
+
+1|residential_apartment|Residential apartment|||0|A|3BHK flat|2BHK|apartment|flat|home interior|apartment renovation|residential flat|house interior
+1|villa|Villa / independent house|||0|V|villa|bungalow|duplex|row house|independent house|kothi|G+1|G+2
+1|commercial_office|Commercial office|||0|O|office interior|corporate office|IT office|startup office|coworking|office fit-out|commercial interior
+1|retail_shop|Retail shop / showroom|||0|R|shop fitout|showroom|boutique|retail|store interior|shop renovation|shop design
+1|hospitality|Hotel / restaurant / cafe|||0|H|hotel room|restaurant interior|cafe|lounge|resort|bar interior|food and beverage
+1|clinic_healthcare|Clinic / hospital / healthcare|||0|C|clinic|doctor chamber|hospital interior|dental clinic|diagnostic centre|healthcare interior|medical centre
+1|education|School / college / training centre|||0|E|school interior|classroom|college interior|training room|library interior|coaching centre|preschool
+1|industrial_warehouse|Industrial / warehouse / factory|||0|I|factory interior|warehouse fitout|industrial office|plant interior|manufacturing facility|godown
+2|apt_modular_kitchen|Modular kitchen|residential_apartment||0|A|kitchen|modular kitchen|kitchen interior|kitchen renovation|kitchen work|kitchen fitout
+@B 0.28:80000
+2|apt_master_wardrobe|Master bedroom wardrobe|residential_apartment||0|A|master wardrobe|MBR wardrobe|master almirah|master storage|master bedroom cupboard|main bedroom wardrobe
+@B 0.22:55000
+2|apt_false_ceiling|False ceiling|residential_apartment||0|A|false ceiling|FC work|gypsum ceiling|POP ceiling|ceiling work|false celling|false ceiling work
+@B 0.14:35000
+2|apt_tv_unit|TV unit / entertainment unit|residential_apartment||0|A|TV unit|television unit|entertainment unit|TV wall|media unit|TV cabinet|TV panel
+@B 0.08:22000
+2|apt_bedroom2_wardrobe|Bedroom 2 wardrobe|residential_apartment||1|A|bedroom 2 wardrobe|second wardrobe|kids wardrobe|guest wardrobe|bedroom 2 storage|child room wardrobe
+@B 0.12:40000
+2|apt_bedroom3_wardrobe|Bedroom 3 wardrobe|residential_apartment||1|A|bedroom 3 wardrobe|third wardrobe|child room wardrobe|3BHK wardrobe|third bedroom almirah
+@B 0.10:35000
+2|apt_foyer_unit|Foyer / entrance unit|residential_apartment||1|A|foyer unit|entrance unit|shoe rack|shoe cabinet|entrance storage|console|foyer design|entryway
+@B 0.04:18000
+2|apt_crockery_unit|Crockery / dining display unit|residential_apartment||1|A|crockery unit|dining storage|bar unit|display cabinet|china cabinet|buffet unit|crockery cabinet
+@B 0.04:20000
+2|apt_study_unit|Study table / home office|residential_apartment||1|A|study table|study unit|workstation|home office|computer table|writing desk|study room
+@B 0.05:20000
+2|apt_pooja_unit|Pooja unit / mandir|residential_apartment||1|A|pooja unit|mandir|puja cabinet|prayer unit|temple unit|pooja cabinet|pooja room
+@B 0.03:15000
+2|apt_kids_room|Kids room furniture / storage|residential_apartment||1|A|kids room|children room|kids wardrobe|bunk bed|kids study|kids storage|baby room
+2|apt_loft_storage|Loft / overhead storage|residential_apartment||1|A|loft|overhead storage|top storage|loft unit|storage above|ceiling storage|box loft
+2|apt_utility_area|Utility / service area|residential_apartment||1|A|utility area|service area|washing area|utility room|laundry|service balcony|back area
+2|apt_bathroom_vanity|Bathroom vanity & accessories|residential_apartment||1|A|bathroom vanity|vanity unit|bathroom cabinet|bath fitting|toilet design|bathroom accessories
+@B 0.04:18000
+2|apt_flooring|Flooring|residential_apartment||1|A|flooring|floor work|tiles|tiling|floor tiles|floor design|flooring work
+@B 0.15:35000
+2|apt_wall_treatment|Wall treatment / paint / wallpaper|residential_apartment||1|A|wall treatment|painting|wall paint|wall design|wallpaper|wall finish|wall work
+@B 0.08:20000
+2|apt_electrical|Electrical work|residential_apartment||1|A|electrical|electrical work|wiring|electrical points|electricals|power points
+@B 0.06:25000
+2|apt_civil_work|Civil / masonry work|residential_apartment||1|A|civil work|masonry|demolition|breakage|civil|tile breaking|wall hacking
+@B 0.05:15000
+2|apt_window_blinds|Window treatments / blinds|residential_apartment||1|A|blinds|window blinds|curtains|roller blind|zebra blind|window treatment|curtain rods
+@B 0.03:12000
+2|apt_loose_furniture|Loose furniture supply|residential_apartment||1|A|loose furniture|sofa|bed|dining table|furniture supply|FF&E|modular furniture
+2|apt_lighting_fixtures|Decorative lighting fixtures|residential_apartment||1|A|lighting fixtures|pendant lights|chandelier|decorative lights|light fittings|designer lights
+2|apt_soft_furnishing|Soft furnishings|residential_apartment||1|A|soft furnishings|cushions|rugs|carpets|throws|bedding|soft goods
+2|villa_modular_kitchen|Modular kitchen|villa||0|V|kitchen|modular kitchen|villa kitchen|large kitchen|open kitchen|island kitchen
+@B 0:90000
+2|villa_master_wardrobe|Master bedroom wardrobe|villa||0|V|master wardrobe|MBR wardrobe|master almirah|walk-in wardrobe|WIC|dressing room
+@B 0:65000
+2|villa_false_ceiling|False ceiling|villa||0|V|false ceiling|FC work|gypsum ceiling|villa ceiling|ceiling work
+@B 0:45000
+2|villa_living_furniture|Living area furniture & joinery|villa||0|V|living room|living furniture|lounge joinery|living area|drawing room
+@B 0:60000
+2|villa_flooring|Flooring — full villa|villa||0|V|flooring|floor work|tiles|villa flooring|marble flooring|full home flooring
+@B 0:55000
+2|villa_wall_treatment|Wall treatment / paint|villa||0|V|wall treatment|painting|wall paint|villa painting|wall design|exterior paint
+@B 0:35000
+2|villa_bedroom_wardrobes|Additional bedroom wardrobes|villa||1|V|bedroom wardrobe|additional wardrobe|kids wardrobe|guest bedroom wardrobe|other wardrobes
+2|villa_staircase|Staircase design|villa||1|V|staircase|stairs|staircase railing|stair design|staircase work
+@B 0:80000
+2|villa_dining_area|Dining area furniture & joinery|villa||1|V|dining area|dining room|dining furniture|crockery unit dining|bar unit dining
+2|villa_home_theatre|Home theatre room|villa||1|V|home theatre|AV room|media room|home cinema|projection room
+2|villa_pooja_room|Dedicated pooja room|villa||1|V|pooja room|mandir room|prayer room|puja room|temple room
+2|villa_study_library|Study / library room|villa||1|V|study room|library|home office|reading room|study library
+2|villa_outdoor_landscaping|Outdoor / landscaping|villa||1|V|outdoor|landscaping|garden|terrace|sitout|outdoor design|deck
+@B 0:50000
+2|villa_gym_room|Home gym room|villa||1|V|home gym|gym room|exercise room|workout room|gym design
+2|villa_kids_room|Kids room / playroom|villa||1|V|kids room|children room|playroom|nursery|baby room
+2|villa_guest_room|Guest bedroom|villa||1|V|guest room|guest bedroom|spare bedroom|visitor room
+2|villa_electrical|Electrical work|villa||1|V|electrical|electrical work|villa electricals|wiring|power points
+2|villa_civil_work|Civil / structural work|villa||1|V|civil work|structural work|masonry|civil|demolition|villa civil
+2|villa_bathroom_master|Master bathroom|villa||1|V|master bathroom|master bath|en-suite|attached bathroom master
+2|villa_bathrooms_others|Other bathrooms|villa||1|V|other bathrooms|guest bathroom|common bathroom|kids bathroom|additional bathrooms
+2|villa_window_blinds|Window treatments|villa||1|V|blinds|curtains|roller blind|window treatment|curtain rods|drapes
+2|villa_smart_home|Smart home / automation|villa||1|V|smart home|home automation|smart switches|Alexa integration|Google Home|automation system
+2|off_reception|Reception / front desk|commercial_office||0|O|reception|front desk|reception area|lobby|reception counter|waiting area office
+@B 0.15:40000
+2|off_workstation_area|Workstation / open office area|commercial_office||0|O|workstation|open office|work area|seating area|workstation area|work floor
+@B 0.30:55000
+2|off_false_ceiling|False ceiling|commercial_office||0|O|false ceiling|office ceiling|grid ceiling|ceiling work|suspended ceiling
+@B 0.12:35000
+2|off_flooring|Office flooring|commercial_office||0|O|flooring|office flooring|floor tiles|carpet tile|vinyl flooring|raised floor
+@B 0.10:30000
+2|off_wall_treatment|Wall treatment / paint / partition|commercial_office||0|O|wall treatment|office painting|glass partition|drywall partition|wall design|wall partition
+@B 0.08:20000
+2|off_electrical|Electrical / data / voice|commercial_office||0|O|electrical|data cabling|electrical work|power points|LAN|networking|electrical office
+@B 0.10:30000
+2|off_cabin|Manager cabin / director cabin|commercial_office||1|O|cabin|manager cabin|director cabin|enclosed office|private office|glass cabin
+@B 0.08:45000
+2|off_conference_room|Conference / meeting room|commercial_office||1|O|conference room|meeting room|board room|discussion room|conference hall
+@B 0.07:50000
+2|off_pantry|Pantry / office kitchen|commercial_office||1|O|pantry|office kitchen|break room|tea station|pantry area|cafeteria office
+@B 0:20000
+2|off_server_room|Server room / IT room|commercial_office||1|O|server room|IT room|data centre|network room|server rack room
+2|off_toilet_block|Toilet block / washrooms|commercial_office||1|O|toilet block|washroom|office toilet|restroom|WC|bathroom office
+2|off_hvac|HVAC / air conditioning|commercial_office||1|O|HVAC|air conditioning|AC work|ducting|VRF|split AC|central AC
+2|off_signage|Signage / branding / wayfinding|commercial_office||1|O|signage|branding|logo|wayfinding|office signage|brand wall|reception signage
+2|off_av_systems|AV / audio-visual systems|commercial_office||1|O|AV|audio visual|projector|screen|conferencing system|video conferencing|AV setup
+@B 0:40000
+2|off_furniture_supply|Loose furniture supply|commercial_office||1|O|loose furniture|chairs|office chairs|lounge furniture|furniture supply|office FF&E
+2|off_storage_joinery|Storage / joinery|commercial_office||1|O|storage|lockers|file cabinet|overhead cabinet|storage joinery|office storage
+2|off_feature_wall|Feature / brand wall|commercial_office||1|O|feature wall|brand wall|accent wall|logo wall|mural wall|wall art office
+@B 0:25000
+2|ret_storefront|Storefront / facade|retail_shop||0|R|storefront|facade|shop front|entrance facade|glass front|ACP cladding|shopfront
+@B 0.20:55000
+2|ret_display_fixtures|Display fixtures / shelving|retail_shop||0|R|display fixtures|shelving|gondola|display racks|product display|wall shelving
+@B 0.25:45000
+2|ret_cash_counter|Cash counter / billing counter|retail_shop||0|R|cash counter|billing counter|POS counter|checkout|cashier counter|billing desk
+@B 0.08:20000
+2|ret_false_ceiling|False ceiling|retail_shop||0|R|false ceiling|retail ceiling|ceiling work|suspended ceiling
+@B 0.10:30000
+2|ret_flooring|Retail flooring|retail_shop||0|R|flooring|retail flooring|floor tiles|shop flooring|floor design
+@B 0.12:30000
+2|ret_wall_treatment|Wall treatment / wall cladding|retail_shop||0|R|wall treatment|wall cladding|wall design|shop walls|wall paint retail
+@B 0.08:20000
+2|ret_lighting|Retail lighting|retail_shop||0|R|retail lighting|shop lighting|LED lighting|track lighting|accent lighting|product lighting
+@B 0.10:25000
+2|ret_trial_room|Trial room / fitting room|retail_shop||1|R|trial room|fitting room|changing room|dressing room|try-on room
+@B 0:18000
+2|ret_stockroom|Stock room / back area|retail_shop||1|R|stockroom|back area|storage area|back room|stock storage
+2|ret_signage|Signage / graphics / branding|retail_shop||1|R|signage|graphics|branding|shop signage|brand identity|shop graphics|fascia sign
+@B 0:15000
+2|ret_electrical|Electrical / data|retail_shop||1|R|electrical|data cabling|retail electrical|power points|CCTV|shop electrical
+2|ret_furniture|Furniture / seating|retail_shop||1|R|furniture|seating|chairs|sofa|retail furniture|display table|soft seating
+2|hos_guestroom|Guest room / hotel room|hospitality||0|H|guest room|hotel room|bedroom hospitality|standard room|deluxe room|suite
+2|hos_lobby|Hotel lobby / entrance|hospitality||0|H|lobby|entrance lobby|hotel lobby|reception lobby|foyer hotel|lounge entrance
+2|hos_bathroom|Bathroom / ensuite|hospitality||0|H|bathroom|ensuite|toilet hospitality|hotel bathroom|washroom hotel
+2|hos_false_ceiling|False ceiling|hospitality||0|H|false ceiling|ceiling work|hospitality ceiling|gypsum ceiling
+2|hos_flooring|Hospitality flooring|hospitality||0|H|flooring|hospitality flooring|marble flooring|carpet hotel|floor tiles hotel
+2|hos_lighting|Hospitality lighting|hospitality||0|H|lighting|hospitality lighting|hotel lighting|mood lighting|ambient lighting
+2|hos_loose_ffe|Loose furniture / FF&E|hospitality||0|H|FF&E|loose furniture|furniture and fixtures|loose items|soft goods|case goods
+2|hos_restaurant_dining|Restaurant / dining area|hospitality||1|H|restaurant|dining area|dining room|food area|cafe seating
+2|hos_bar_lounge|Bar / lounge|hospitality||1|H|bar|lounge|bar counter|bar lounge|cocktail bar
+2|hos_kitchen_commercial|Commercial kitchen|hospitality||1|H|commercial kitchen|restaurant kitchen|industrial kitchen|back-of-house kitchen
+2|hos_spa_wellness|Spa / wellness centre|hospitality||1|H|spa|wellness|treatment room|massage room|spa area
+2|hos_banquet_hall|Banquet / event hall|hospitality||1|H|banquet hall|event space|function hall|conference hotel|banquet room
+2|hos_corridor|Corridors / public areas|hospitality||1|H|corridor|hallway|public area|common area|passage hotel
+2|hos_pool_area|Pool area / outdoor|hospitality||1|H|pool area|swimming pool|outdoor area|poolside|pool deck
+2|cli_waiting_area|Waiting / reception area|clinic_healthcare||0|C|waiting area|reception|waiting room|patient waiting|lobby clinic
+2|cli_consultation_room|Consultation / examination room|clinic_healthcare||0|C|consultation room|doctor room|examination room|OPD room|doctor chamber
+2|cli_flooring|Clinical flooring|clinic_healthcare||0|C|clinical flooring|anti-bacterial flooring|homogeneous vinyl|epoxy floor clinic|PVC flooring clinic
+2|cli_wall_treatment|Wall treatment|clinic_healthcare||0|C|wall treatment|clinic paint|anti-bacterial paint|hospital grade paint|wall cladding clinic
+2|cli_procedure_room|Procedure / treatment room|clinic_healthcare||1|C|procedure room|treatment room|operation theatre|minor OT|dressing room clinic
+2|cli_pharmacy|Pharmacy / dispensary|clinic_healthcare||1|C|pharmacy|dispensary|medicine counter|drug store|medical shop
+2|cli_nurses_station|Nurses station / workstation|clinic_healthcare||1|C|nurses station|nurse counter|staff workstation|medical workstation|nursing station
+2|cli_toilet|Patient toilets|clinic_healthcare||1|C|patient toilet|accessible toilet|clinic washroom|bathroom clinic|handicap toilet
+2|cli_false_ceiling|False ceiling|clinic_healthcare||1|C|false ceiling|clinic ceiling|ceiling work|washable ceiling|mineral fiber ceiling
+2|cli_signage|Wayfinding / signage|clinic_healthcare||1|C|signage|wayfinding|clinic signage|room numbers|patient flow signage|directional signs
+2|edu_classroom|Classrooms|education||0|E|classroom|class room|teaching room|lecture hall|tutorial room|student room
+2|edu_admin_area|Admin / staff area|education||0|E|admin area|staff room|principal office|office area school|administrative area
+2|edu_reception|Reception / entrance area|education||0|E|reception|entrance|lobby school|front office school|reception education
+2|edu_flooring|Flooring|education||0|E|flooring|school flooring|vinyl flooring|epoxy floor school|anti-skid floor
+2|edu_wall_treatment|Wall treatment / paint|education||0|E|wall treatment|school paint|wall paint|washable paint|chalkboard paint|wall design school
+2|edu_false_ceiling|False ceiling|education||0|E|false ceiling|acoustic ceiling|mineral fiber ceiling|school ceiling|classroom ceiling
+2|edu_library|Library / reading room|education||1|E|library|reading room|book room|study library school
+2|edu_lab|Laboratory|education||1|E|lab|laboratory|science lab|computer lab|language lab
+2|edu_auditorium|Auditorium / assembly hall|education||1|E|auditorium|assembly hall|multipurpose hall|school hall|event hall school
+2|edu_washrooms|Washrooms / toilets|education||1|E|washroom|toilet school|student toilet|girls toilet|boys toilet
+2|edu_canteen|Canteen / cafeteria|education||1|E|canteen|cafeteria|mess|dining school|food area school
+2|edu_electrical|Electrical / AV|education||1|E|electrical|AV|audio visual school|projector|smartboard|electrical school
+2|ind_office_area|Office / admin area|industrial_warehouse||0|I|office area|admin office|factory office|plant office|management office
+2|ind_reception|Reception / visitor area|industrial_warehouse||0|I|reception|visitor area|factory entrance|plant reception|guard room
+2|ind_flooring|Industrial flooring|industrial_warehouse||0|I|industrial flooring|epoxy floor|factory floor|warehouse floor|heavy duty floor|anti-static floor
+2|ind_wall_treatment|Wall treatment / paint|industrial_warehouse||0|I|wall treatment|industrial paint|factory paint|warehouse wall|epoxy wall paint
+2|ind_washrooms|Washrooms / change rooms|industrial_warehouse||0|I|washroom|change room|locker room|industrial toilet|worker washroom
+2|ind_electrical|Electrical / industrial lighting|industrial_warehouse||0|I|electrical|industrial lighting|high bay lights|factory electrical|warehouse lighting
+2|ind_canteen|Canteen / breakroom|industrial_warehouse||1|I|canteen|breakroom|lunch room|factory canteen|worker dining
+2|ind_storage_racks|Storage racks / mezzanine|industrial_warehouse||1|I|storage racks|racking system|mezzanine floor|pallet rack|shelving industrial
+2|ind_false_ceiling|False ceiling (office areas)|industrial_warehouse||1|I|false ceiling industrial|grid ceiling factory|suspended ceiling office area
+3|kit_carcass_ply|Carcass plywood (BWP 19mm)|apt_modular_kitchen|sf|1|AV|kitchen ply|carcass plywood|BWP plywood|marine ply|kitchen carcass|base cabinet ply|710 ply|BWR ply|commercial ply kitchen
+@R 75:18/95:24/130:32
+@Q sm:0.03
+3|kit_shutter_laminate|Shutter — laminate finish|apt_modular_kitchen|sf|1|AV|laminate shutter|HPL shutter|kitchen shutter laminate|Merino|Greenlam|Royale|1mm laminate shutter
+@R 95:22/130:30/185:40
+@Q sm:0.03
+3|kit_shutter_acrylic|Shutter — acrylic finish|apt_modular_kitchen|sf|1|AV|acrylic shutter|acrylic finish|glossy shutter|high gloss|mirror finish shutter|UV acrylic
+@R 140:25/185:32/260:45
+@Q sm:0.03
+3|kit_shutter_membrane|Shutter — membrane / PVC foil|apt_modular_kitchen|sf|1|AV|membrane shutter|PVC membrane|foil shutter|thermofoil|wrap shutter|vacuum press
+@R 110:22/145:28/195:38
+@Q sm:0.03
+3|kit_shutter_glass|Shutter — glass / frosted|apt_modular_kitchen|sf|1|AV|glass shutter|frosted glass|toughened glass shutter|glass door kitchen|frosted glass door
+3|kit_countertop_granite|Countertop — granite|apt_modular_kitchen|sf|1|AV|granite slab|stone top|kitchen top granite|worktop granite|granite counter|Absolute Black|Black Galaxy
+@R 220:40/280:48/380:60
+@Q wl:0.08
+3|kit_countertop_quartz|Countertop — engineered quartz|apt_modular_kitchen|sf|1|AV|quartz top|engineered stone|quartz countertop|Silestone|Caesarstone|Kalinga Stone
+@R 320:45/420:55/620:70
+@Q wl:0.08
+3|kit_countertop_ss|Countertop — stainless steel|apt_modular_kitchen|sf|1|AV|SS top|steel top|stainless counter|metal top|SS counter|202 SS top
+@R 280:40/340:48/340:48
+@Q wl:0.08
+3|kit_countertop_corian|Countertop — solid surface / Corian|apt_modular_kitchen|sf|1|AV|solid surface|Corian|seamless counter|acrylic solid surface|Du Pont Corian
+@R 580:60/580:60/780:75
+@Q wl:0.08
+3|kit_drawer_channel|Drawer channels / slides|apt_modular_kitchen|n|1|AV|drawer channel|drawer slide|Hettich channel|Ebco channel|Hettich Quadro|Tandem box|soft close drawer
+@R 80:0/110:0/160:0
+@Q cs:40
+3|kit_hinge_soft_close|Soft-close hinges|apt_modular_kitchen|n|1|AV|soft close hinge|hydraulic hinge|door hinge|Hettich hinge|Ebco hinge|clip hinge|Salice
+@R 85:0/110:0/145:0
+@Q cs:15
+3|kit_basket_pullout|Pull-out baskets / cargo|apt_modular_kitchen|n|1|AV|pull-out basket|cargo unit|tandem basket|wire basket|magic corner|bottle pullout|kitchen cargo
+@R 450:0/650:0/950:0
+@Q fx:2
+3|kit_wicker_basket|Wicker / vegetable basket|apt_modular_kitchen|n|1|AV|wicker basket|vegetable basket|fruit basket|storage basket kitchen|pull-out veg basket
+@R 380:0/380:0/380:0
+3|kit_handle|Cabinet handles|apt_modular_kitchen|n|1|AV|handles|cabinet handle|kitchen handle|SS handle|profile handle|G-handle|J-pull|finger pull
+@R 35:0/55:0/95:0
+@Q cs:15
+3|kit_edge_banding|Edge banding|apt_modular_kitchen|rf|1|AV|edge banding|edge tape|PVC edge|ABS edge|edge strip|lipping
+@R 12:4/15:5/15:5
+3|kit_skirting|Plinth / skirting|apt_modular_kitchen|rf|1|AV|plinth|skirting|toe kick|base panel|bottom panel kitchen|kick plate
+@R 18:6/24:8/24:8
+3|kit_wall_tiles|Wall tiles / dado|apt_modular_kitchen|sf|1|AV|wall tiles|dado tiles|kitchen tiles|backsplash|tile work kitchen|splash back|kitchen dado
+@R 45:22/65:28/65:28
+@Q sm:0.025
+3|kit_chimney|Kitchen chimney / hood|apt_modular_kitchen|n|1|AV|chimney|kitchen hood|exhaust hood|cooker hood|auto-clean chimney|Elica|Faber|Hindware chimney
+@R 6500:500/9500:600/18000:800
+@Q fx:1
+3|kit_hob|Gas hob / cooktop|apt_modular_kitchen|n|1|AV|hob|gas hob|cooktop|3 burner hob|4 burner|gas stove|induction hob|built-in hob
+@R 5500:400/8500:500/8500:500
+@Q fx:1
+3|kit_sink|Sink + faucet|apt_modular_kitchen|n|1|AV|sink|kitchen sink|SS sink|granite sink|sink tap|faucet|mixer tap|double bowl sink
+@R 2800:200/4500:300/8500:400
+@Q fx:1
+3|kit_lighting_led|Under-cabinet / cove LED lighting|apt_modular_kitchen|rf|1|AV|kitchen lighting|under cabinet light|LED strip kitchen|profile light|cove kitchen|task lighting
+@R 90:20/90:20/90:20
+3|kit_labour|Kitchen installation labour|apt_modular_kitchen|ls|1|AV|kitchen labour|installation labour|fitting charges|carpenter kitchen|kitchen fitting
+@R 0:14000/0:18000/0:25000
+@Q fx:1
+3|wr_carcass_ply|Wardrobe carcass plywood|apt_master_wardrobe|sf|1|AV|wardrobe ply|wardrobe carcass|WR carcass|almirah ply|commercial ply wardrobe|710 ply wardrobe
+@R 68:16/88:22/130:32
+@Q wl:0.12
+3|wr_shutter_laminate|Shutter — laminate finish|apt_master_wardrobe|sf|1|AV|wardrobe shutter laminate|WR door laminate|sliding door laminate|swing door|wardrobe door HPL
+@R 88:20/125:28/175:38
+@Q wl:0.12
+3|wr_shutter_acrylic|Shutter — acrylic / high gloss|apt_master_wardrobe|sf|1|AV|acrylic wardrobe shutter|gloss wardrobe|acrylic WR door|UV acrylic wardrobe
+@R 175:30/175:30/240:42
+@Q wl:0.12
+3|wr_shutter_glass|Shutter — glass / frosted|apt_master_wardrobe|sf|1|AV|glass shutter wardrobe|frosted glass WR|toughened glass door wardrobe|mirror shutter
+@R 145:28/145:28/145:28
+@Q wl:0.06
+3|wr_mirror|Full-length mirror|apt_master_wardrobe|sf|1|AV|wardrobe mirror|full length mirror|dressing mirror|mirror panel wardrobe|vanity mirror
+@R 65:15/85:18/120:25
+@Q fx:1
+3|wr_hinge|Wardrobe hinges (swing door)|apt_master_wardrobe|n|1|AV|wardrobe hinge|door hinge wardrobe|soft close wardrobe hinge|hydraulic hinge WR
+@R 75:0/95:0/95:0
+@Q cs:20
+3|wr_sliding_track|Sliding track system|apt_master_wardrobe|rf|1|AV|sliding track|wardrobe track|Hettich track|sliding system|roller track|Ebco track|sliding door system
+@R 120:0/120:0/185:0
+@Q wl:0.12
+3|wr_drawer|Internal drawers|apt_master_wardrobe|n|1|AV|wardrobe drawer|internal drawer|chest drawer|wardrobe box|built-in drawer
+@R 950:0/1250:0/1850:0
+@Q fx:2
+3|wr_loft|Wardrobe loft / overhead storage|apt_master_wardrobe|sf|1|AV|wardrobe loft|loft unit|top storage|overhead wardrobe|loft above wardrobe
+@R 82:20/82:20/82:20
+@Q wl:0.08
+3|wr_internal_acc|Internal accessories|apt_master_wardrobe|n|1|AV|saree rack|trouser rack|tie rack|belt rack|jewellery tray|internal fittings|wardrobe organiser
+@R 550:0/550:0/550:0
+3|wr_handle|Wardrobe handles|apt_master_wardrobe|n|1|AV|wardrobe handle|door handle WR|pull handle wardrobe|profile handle wardrobe
+@R 30:0/48:0/48:0
+@Q cs:40
+3|wr_back_panel|Back panel / board|apt_master_wardrobe|sf|1|AV|wardrobe back panel|back board|WR back|laminated back|mirror back
+@R 48:12/48:12/48:12
+@Q wl:0.10
+3|fc_gypsum_board|Gypsum board false ceiling|apt_false_ceiling|sf|1|AVO|gypsum board|gypsum ceiling|plasterboard|gypsum false ceiling|drywall ceiling|Saint Gobain
+@R 42:16/52:18/68:24
+@Q sm:0.65
+3|fc_metal_frame|Metal grid / frame structure|apt_false_ceiling|sf|1|AVO|metal frame|MS frame|GI frame|ceiling grid|grid structure|ceiling framework|GI channels
+@R 22:12/28:14/35:18
+@Q sm:0.65
+3|fc_pop_work|POP / plaster of paris work|apt_false_ceiling|sf|1|AV|POP ceiling|plaster of paris|POP false ceiling|POP cornice|POP border|POP moulding
+@R 28:14/35:18/35:18
+@Q sm:0.20
+3|fc_cove_profile|Cove / coving profile|apt_false_ceiling|rf|1|AVO|cove|coving|cove profile|cove ceiling|recessed cove|LED cove|indirect cove|L-profile
+@R 45:15/45:15/65:20
+@Q wl:0.80
+3|fc_led_strip|LED strip for cove / indirect lighting|apt_false_ceiling|rf|1|AVO|LED strip|cove light|LED tape|indirect light strip|LED ribbon cove|LED strip 12V
+@R 65:15/85:18/125:22
+@Q wl:0.80
+3|fc_led_driver|LED driver / transformer|apt_false_ceiling|n|1|AVO|LED driver|transformer|SMPS|LED power supply|12V driver|24V driver
+@R 380:0/380:0/380:0
+@Q cs:120
+3|fc_spotlight|Recessed spotlight / downlight|apt_false_ceiling|n|1|AVO|spotlight|downlight|recessed light|can light|GU10|COB downlight|pot light|recessed downlight
+@R 280:60/380:80/580:110
+@Q cs:40
+3|fc_track_light|Track lighting|apt_false_ceiling|n|1|AVO|track light|track lighting|rail light|spotlight track|adjustable track|magnetic track
+@R 650:100/650:100/980:140
+@Q cs:80
+3|fc_grid_ceiling|Modular grid ceiling (T-bar)|apt_false_ceiling|sf|1|OEI|grid ceiling|T-bar ceiling|lay-in ceiling|modular ceiling|suspended grid|Armstrong ceiling
+3|fc_ceiling_paint|Ceiling paint and putty|apt_false_ceiling|sf|1|AVO|ceiling paint|ceiling putty|emulsion ceiling|white cement ceiling|ceiling finish
+@R 12:8/14:10/14:10
+@Q sm:0.65
+3|fc_acoustic_panel|Acoustic ceiling panels|apt_false_ceiling|sf|1|OEH|acoustic panel|mineral fibre board|acoustic tile|sound absorbing panel|NRC panel
+3|tv_carcass|TV unit carcass / body|apt_tv_unit|sf|1|AV|TV carcass|TV unit body|media carcass|entertainment unit carcass|TV cabinet body|TV unit ply
+@R 72:18/90:22/125:30
+@Q wl:0.06
+3|tv_shutter|TV unit shutters / doors|apt_tv_unit|sf|1|AV|TV unit doors|TV cabinet shutter|media unit shutter|TV unit door laminate|TV cabinet door
+@R 92:22/118:28/165:38
+@Q wl:0.04
+3|tv_back_panel|Feature wall / back panel|apt_tv_unit|sf|1|AV|back panel|feature wall|TV wall panel|accent panel|TV backdrop|wallpaper behind TV|TV wall cladding
+@R 80:20/95:24/180:42
+@Q wl:0.05
+3|tv_floating_shelf|Floating / open shelves|apt_tv_unit|n|1|AV|floating shelf|open shelf|display shelf|book shelf floating|TV shelf|wall bracket shelf
+@R 850:150/850:150/1800:250
+@Q fx:1
+3|tv_led_profile|LED backlight / cove profile|apt_tv_unit|rf|1|AV|LED profile TV|backlight TV unit|LED cove TV unit|profile light TV wall|ambient TV lighting
+@R 88:18/88:18/88:18
+@Q wl:0.06
+3|tv_cable_mgmt|Cable management / trunking|apt_tv_unit|rf|1|AV|cable management|cable trunking|wire concealment|cable duct TV|wire management|cable hiding
+@R 45:20/45:20/45:20
+@Q fx:1
+3|tv_wall_mounting|TV wall mounting work|apt_tv_unit|n|1|AV|TV mounting|wall mount TV|TV bracket|TV installation|TV fixing|mount TV on wall
+@R 800:0/800:0/800:0
+@Q fx:1
+3|tv_handle|Cabinet handles (TV unit)|apt_tv_unit|n|1|AV|TV unit handle|cabinet handle TV|door pull TV unit|knob TV cabinet
+3|foy_shoe_cabinet_carcass|Shoe cabinet carcass|apt_foyer_unit|sf|1|AV|shoe cabinet|shoe rack|footwear cabinet|shoe storage|shoe cupboard carcass
+@R 85:20/85:20/85:20
+@Q fx:12
+3|foy_shoe_cabinet_shutter|Shoe cabinet shutters / doors|apt_foyer_unit|sf|1|AV|shoe cabinet door|shoe rack shutter|shoe unit door laminate
+@R 110:25/110:25/110:25
+@Q fx:12
+3|foy_console|Console / key holder unit|apt_foyer_unit|n|1|AV|console|key holder|foyer console|entry console|key unit|hall console
+@R 2800:0/2800:0/2800:0
+@Q fx:1
+3|foy_wall_cladding|Foyer wall cladding / panel|apt_foyer_unit|sf|1|AV|foyer wall cladding|entrance wall panel|foyer panelling|wall art foyer|entry wall design
+@R 92:22/92:22/92:22
+@Q sm:0.04
+3|foy_mirror|Foyer mirror|apt_foyer_unit|n|1|AV|foyer mirror|entry mirror|hall mirror|full length mirror foyer|entrance mirror
+@R 1800:0/1800:0/1800:0
+@Q fx:1
+3|foy_seating_bench|Foyer seating bench|apt_foyer_unit|n|1|AV|foyer bench|entrance bench|shoe changing seat|entry seating|foyer stool
+3|foy_pendant_light|Foyer pendant / feature light|apt_foyer_unit|n|1|AV|foyer light|pendant foyer|entrance chandelier|foyer chandelier|entry light
+3|cro_carcass|Crockery unit carcass|apt_crockery_unit|sf|1|AV|crockery unit ply|crockery carcass|dining unit carcass|buffet carcass|bar unit ply
+@R 85:22/85:22/85:22
+@Q fx:20
+3|cro_shutter_lower|Lower shutters (solid)|apt_crockery_unit|sf|1|AV|lower shutter crockery|solid shutter dining unit|bottom door crockery
+@R 118:28/118:28/118:28
+@Q fx:12
+3|cro_shutter_glass|Upper shutters (glass / display)|apt_crockery_unit|sf|1|AV|glass shutter crockery|display shutter|upper glass door|frosted glass crockery unit|showcase door
+@R 140:28/140:28/140:28
+@Q fx:8
+3|cro_back_panel|Back panel / mirror back|apt_crockery_unit|sf|1|AV|crockery back panel|mirror back crockery|wallpaper back|backlit back panel
+3|cro_led_lighting|Internal LED lighting|apt_crockery_unit|rf|1|AV|crockery unit LED|internal light crockery|shelf light|display cabinet LED|showcase light
+@R 85:18/85:18/85:18
+@Q fx:6
+3|cro_handle|Handles|apt_crockery_unit|n|1|AV|crockery unit handle|dining cabinet handle|buffet handle
+3|std_desktop_carcass|Desktop / writing surface|apt_study_unit|sf|1|AV|study desk|writing desk|desktop|work surface|study table top|computer desk
+@R 88:22/88:22/88:22
+@Q fx:20
+3|std_overhead_unit|Overhead storage unit|apt_study_unit|sf|1|AV|overhead unit|wall unit study|above desk storage|study overhead|book unit above
+@R 82:20/82:20/82:20
+@Q fx:12
+3|std_drawer_unit|Drawers / pedestal|apt_study_unit|n|1|AV|study drawer|pedestal|under desk drawer|file drawer|study chest
+3|std_bookshelf|Bookshelf / open shelves|apt_study_unit|sf|1|AV|bookshelf|book rack|open shelves study|wall shelves study|display shelves study
+@R 78:18/78:18/78:18
+@Q fx:16
+3|std_task_light|Task / study light|apt_study_unit|n|1|AV|task light|study lamp|desk lamp|study light|LED study lamp
+3|std_pegboard|Pegboard / pin board|apt_study_unit|sf|1|AV|pegboard|pinboard|notice board|memo board|organiser board
+3|pj_carcass|Pooja unit carcass|apt_pooja_unit|sf|1|AV|pooja unit ply|mandir carcass|pooja cabinet body|puja unit carcass
+@R 85:22/85:22/85:22
+@Q fx:18
+3|pj_shutter_glass|Glass / jali shutters|apt_pooja_unit|sf|1|AV|glass shutter pooja|jali door|mesh door pooja|frosted glass pooja|lattice shutter mandir
+3|pj_marble_shelf|Marble / stone shelf / platform|apt_pooja_unit|sf|1|AV|marble shelf pooja|stone platform|platform pooja|mandir marble|pooja shelf marble
+@R 220:45/220:45/220:45
+@Q fx:4
+3|pj_backlit_panel|Backlit / feature back panel|apt_pooja_unit|sf|1|AV|backlit pooja|back panel pooja|LED backlit mandir|backlit mandir|feature panel pooja
+3|pj_jaali_work|Jaali / decorative grille work|apt_pooja_unit|sf|1|AV|jaali work|lattice work|MDF jaali|CNC cut panel|decorative grille
+3|pj_led_strip|LED strip / devotional lighting|apt_pooja_unit|rf|1|AV|pooja unit LED|mandir light|LED strip pooja|devotional light|pooja lighting
+@R 85:18/85:18/85:18
+@Q fx:6
+3|kid_bed_bunk|Bunk bed / loft bed|apt_kids_room|n|1|AV|bunk bed|loft bed|double decker bed|kids bunk|double bed kids
+3|kid_wardrobe|Kids wardrobe|apt_kids_room|sf|1|AV|kids wardrobe|children wardrobe|kids cupboard|baby wardrobe|toy storage wardrobe
+3|kid_study_table|Kids study table|apt_kids_room|n|1|AV|kids study|children desk|kids table|study table kids|homework table
+3|kid_wall_decor|Wall decor / themed panel|apt_kids_room|sf|1|AV|kids wall decor|themed wall|children wall art|chalkboard wall|kids room wall panel
+3|kid_toy_storage|Toy storage / open shelves|apt_kids_room|n|1|AV|toy storage|kids shelf|toy rack|kids open shelf|cube storage kids
+3|lft_carcass|Loft carcass / box|apt_loft_storage|sf|1|AV|loft box|loft carcass|overhead box|loft unit carcass|storage loft ply
+3|lft_shutter|Loft shutters|apt_loft_storage|sf|1|AV|loft shutter|loft door|loft unit door|overhead unit shutter
+3|util_washing_counter|Washing / utility counter|apt_utility_area|sf|1|AV|utility counter|washing counter|laundry counter|service area counter|utility slab
+3|util_storage_cabinet|Utility storage cabinet|apt_utility_area|sf|1|AV|utility cabinet|utility storage|utility cupboard|service area storage|cleaning cabinet
+3|util_wall_tiles|Utility area wall tiles|apt_utility_area|sf|1|AV|utility tiles|service area tiles|laundry tiles|utility dado
+3|bath_vanity_unit|Vanity unit / mirror cabinet|apt_bathroom_vanity|n|1|AV|vanity unit|mirror cabinet|bathroom cabinet|vanity cabinet|toilet mirror unit
+@Q fx:1
+3|bath_mirror|Bathroom mirror|apt_bathroom_vanity|sf|1|AV|bathroom mirror|toilet mirror|mirror bath|bath mirror|washroom mirror
+@Q fx:1
+3|bath_dado_tiles|Bathroom dado tiles|apt_bathroom_vanity|sf|1|AV|bathroom tiles|dado tiles bathroom|toilet tiles|bath wall tiles|washroom tiles
+@Q sm:0.04
+3|bath_accessories|Bathroom accessories set|apt_bathroom_vanity|n|1|AV|bathroom accessories|towel ring|toilet roll holder|toothbrush holder|bath set|sanitary accessories
+@Q fx:1
+3|bath_cp_fittings|CP fittings / shower / taps|apt_bathroom_vanity|n|1|AV|CP fittings|shower set|bath fittings|basin tap|shower mixer|Jaquar|Kohler|American Standard
+@Q fx:1
+3|fl_vitrified_tile|Vitrified tiles|apt_flooring|sf|1|AVOR|vitrified tile|floor tile|GVT tile|full body tile|rectified tile|glazed tile|porcelain tile
+@R 55:28/75:35/120:48
+@Q sm:0.90
+3|fl_wooden_laminate|Wooden laminate / engineered wood|apt_flooring|sf|1|AV|wooden floor|laminate floor|engineered wood|wood flooring|parquet|oak floor
+@R 85:22/115:28/185:38
+@Q sm:0.90
+3|fl_vinyl_lvt|Vinyl / LVT flooring|apt_flooring|sf|1|AVOCE|vinyl flooring|LVT|luxury vinyl tile|SPC flooring|vinyl plank|vinyl sheet|heterogeneous vinyl
+@R 85:22/85:22/85:22
+@Q sm:0.90
+3|fl_carpet_tile|Carpet / carpet tiles|apt_flooring|sf|1|OH|carpet|carpet tile|loop pile|cut pile|broadloom carpet|Moquette
+3|fl_marble|Marble flooring|apt_flooring|sf|1|AVH|marble flooring|marble tiles|Italian marble|Indian marble|Makrana|Statuario|Carrara
+@R 185:55/185:55/320:80
+@Q sm:0.90
+3|fl_epoxy|Epoxy flooring|apt_flooring|sf|1|ICO|epoxy floor|epoxy coating|seamless floor|self-levelling floor|epoxy terrazzo|epoxy screed
+3|fl_adhesive_labour|Flooring adhesive and laying labour|apt_flooring|sf|1|AVOR|flooring labour|tiling labour|laying charge|tile adhesive|bedding|floor fixing|tile fixing labour
+@R 8:18/10:22/10:22
+@Q sm:0.90
+3|fl_skirting_tile|Floor skirting / tile skirting|apt_flooring|rf|1|AVO|skirting|floor skirting|tile skirting|wall base|floor edge tile|GF skirting
+@R 38:18/48:22/48:22
+@Q wl:0.90
+3|fl_anti_skid_step|Anti-skid / stair step tile|apt_flooring|sf|1|VEH|anti skid tile|stair step tile|step tile|non-slip tile|anti skid floor
+3|wt_emulsion_paint|Interior emulsion paint|apt_wall_treatment|sf|1|AVOE|wall paint|emulsion paint|interior paint|putty paint|Asian paints|Dulux|Berger|Nerolac
+@R 8:12/12:15/18:18
+@Q sm:3.50
+3|wt_texture_paint|Texture / decorative paint|apt_wall_treatment|sf|1|AVHR|texture paint|decorative paint|sand texture|rough cast|Royale Play|Asian texture|stucco
+@R 22:18/22:18/22:18
+@Q sm:0.80
+3|wt_wallpaper|Wallpaper / wall covering|apt_wall_treatment|sf|1|AVHO|wallpaper|wall covering|vinyl wallpaper|self-adhesive|non-woven wallpaper|fabric wallpaper
+@R 55:22/55:22/95:30
+@Q sm:0.60
+3|wt_wpc_panel|WPC / fluted wall panel|apt_wall_treatment|sf|1|AVO|WPC panel|fluted panel|wall panel|3D panel|louver panel|PVC wall panel|reeded panel|slat wall
+@R 85:25/85:25/125:32
+@Q sm:0.40
+3|wt_veneer_panel|Veneer / wood panelling|apt_wall_treatment|sf|1|AVH|veneer wall|wood panelling|teak veneer|walnut veneer|oak veneer|wood wall
+@R 145:35/145:35/220:48
+@Q sm:0.30
+3|wt_stone_cladding|Stone cladding / wall|apt_wall_treatment|sf|1|AVHR|stone cladding|stone wall|ledger stone|slate cladding|exposed stone|stone panel
+@R 0:0/0:0/280:65
+@Q sm:0.25
+3|wt_glass_partition|Glass partition wall|off_wall_treatment|sf|1|OR|glass partition|glass wall|frameless glass|framed glass partition|demountable glass|system partition
+3|wt_drywall_partition|Drywall / gypsum partition|off_wall_treatment|sf|1|OC|drywall partition|gypsum partition|stud partition|interior wall|GI partition|metal stud partition
+3|wt_putty_primer|Putty and primer (base coat)|apt_wall_treatment|sf|1|AVO|putty|primer|wall putty|birla putty|JK putty|primer coat|base coat|white cement putty
+@R 6:8/8:10/8:10
+@Q sm:3.50
+3|wt_exterior_paint|Exterior / weather-shield paint|villa_wall_treatment|sf|1|V|exterior paint|weathershield|exterior emulsion|outside paint|Apex exterior|Dulux Weathershield
+3|el_switch_point|Switch / plug point|apt_electrical|n|1|AVO|electrical point|switch point|plug point|power point|5A point|15A point|USB point|switch socket
+@R 280:120/380:150/650:180
+@Q cs:80
+3|el_db_box|Distribution board / MCB panel|apt_electrical|n|1|AVO|DB box|MCB board|distribution board|main panel|ELCB|electrical panel|circuit board
+@R 3500:800/3500:800/3500:800
+@Q fx:1
+3|el_wiring_conduit|Wiring and conduit|apt_electrical|rf|1|AVO|wiring|conduit|wire|copper wire|FR wire|conduit wiring|wire run|electrical wiring
+@R 45:25/55:30/55:30
+@Q sm:1.20
+3|el_exhaust_fan|Exhaust fan point|apt_electrical|n|1|AV|exhaust fan|bathroom fan|ventilation fan|exhaust point|Usha exhaust|Crompton fan
+@R 650:150/650:150/650:150
+@Q cs:400
+3|el_ac_point|AC power point|apt_electrical|n|1|AV|AC point|air conditioner point|16A point|AC socket|AC wiring
+@R 420:150/550:180/550:180
+@Q cs:200
+3|el_data_point|Data / LAN / networking point|off_electrical|n|1|OE|data point|LAN point|network point|ethernet|CAT6|internet point|RJ45 point
+3|el_smart_switch|Smart / touch switch panel|apt_electrical|n|1|AV|smart switch|touch switch|modular switch|Legrand|Schneider|GM switch|Anchor switch|touch panel
+@R 1200:150/1200:150/2200:200
+@Q cs:150
+3|off_workstation_linear|Linear workstation|off_workstation_area|n|1|O|linear workstation|L-shape workstation|bench desk|linear desk|straight desk|work desk office
+@R 8500:0/8500:0/8500:0
+3|off_workstation_cluster|Cluster / pod workstation|off_workstation_area|n|1|O|cluster workstation|pod desk|4-seater pod|6-seater cluster|bay workstation|open plan cluster
+@R 7500:0/7500:0/7500:0
+3|off_cabin_joinery|Cabin joinery / manager furniture|off_cabin|ls|1|O|cabin furniture|manager furniture|cabin joinery|executive desk|cabin table|director table
+@R 0:45000/0:45000/0:45000
+3|off_locker_unit|Locker unit / storage|off_storage_joinery|n|1|O|locker|storage cabinet|file cabinet|locker unit|personal locker|steel locker
+@R 3500:0/3500:0/3500:0
+3|off_overhead_cabinet|Overhead storage cabinet|off_storage_joinery|rf|1|O|overhead cabinet|above workstation storage|overhead unit|shelf above desk|wall mounted cabinet
+@R 480:0/480:0/480:0
+3|off_reception_counter|Reception counter joinery|off_reception|ls|1|O|reception counter|front desk joinery|reception desk|counter joinery|reception unit
+@R 0:35000/0:35000/0:35000
+3|off_conf_table|Conference table|off_conference_room|n|1|O|conference table|meeting table|board room table|office conference table
+3|off_pantry_counter|Pantry counter / kitchenette|off_pantry|rf|1|O|pantry counter|office kitchen counter|tea counter|coffee station|kitchenette counter
+3|off_server_rack|Server rack enclosure / cable tray|off_server_room|n|1|O|server rack|rack enclosure|cable tray server|network rack|IT rack
+3|vl_staircase_ms_railing|Staircase MS / SS railing|villa_staircase|rf|1|V|SS railing|staircase railing|MS railing|handrail|stair railing|steel railing
+3|vl_staircase_glass_railing|Staircase glass railing|villa_staircase|rf|1|V|glass railing|frameless glass stair|glass balustrade|structural glass railing
+3|vl_staircase_wooden_tread|Wooden stair treads / cladding|villa_staircase|n|1|V|wooden tread|stair cladding|step cladding|teak tread|engineered wood tread
+3|vl_pergola|Outdoor pergola|villa_outdoor_landscaping|sf|1|V|pergola|outdoor pergola|timber pergola|WPC pergola|metal pergola|sitout
+3|vl_deck|Outdoor deck / decking|villa_outdoor_landscaping|sf|1|V|deck|decking|wooden deck|WPC deck|composite decking|outdoor flooring
+3|vl_landscape_planting|Landscaping / planting|villa_outdoor_landscaping|ls|1|V|landscaping|garden|plants|planting|garden design|lawn
+3|vl_home_automation|Smart home / automation system|villa_smart_home|ls|1|V|smart home|home automation|Alexa|Google Home|smart switches|Lutron|KNX|Crestron
+3|vl_tv_unit_living|TV unit / entertainment joinery (living)|villa_living_furniture|sf|1|V|villa TV unit|living room TV wall|villa media unit|living joinery TV
+3|vl_bookcase|Bookcase / display unit (living)|villa_living_furniture|sf|1|V|bookcase|display cabinet|living display unit|wall bookshelf|book wall
+3|hos_headboard|Headboard / bed back panel|hos_guestroom|n|1|H|headboard|bed head panel|upholstered headboard|fabric headboard|padded headboard
+3|hos_minibar_unit|Minibar / writing desk unit|hos_guestroom|n|1|H|minibar|writing desk|desk unit|work desk hotel|hotel desk|minibar counter
+3|hos_wardrobe_hotel|Hotel wardrobe / open robe|hos_guestroom|n|1|H|hotel wardrobe|open robe|luggage bench|hotel closet|robe area
+3|hos_bar_counter_joinery|Bar counter joinery|hos_bar_lounge|rf|1|H|bar counter|bar joinery|bar top|back bar|bar carcass
+3|hos_restaurant_banquette|Restaurant banquette seating|hos_restaurant_dining|rf|1|H|banquette seating|booth seating|fixed seating restaurant|bench seating
+3|hos_acoustic_panel|Acoustic treatment panels|hos_banquet_hall|sf|1|HE|acoustic panel|sound panel|acoustic treatment|sound absorption|fabric panel|NRC panel
+3|hos_reception_desk|Hotel reception desk / joinery|hos_lobby|ls|1|H|hotel reception desk|front desk hotel|check-in counter|lobby desk joinery
+3|hos_lobby_seating|Lobby seating / lounge furniture|hos_lobby|n|1|H|lobby seating|lounge chairs|hotel lobby sofa|waiting sofa hospitality
+3|hos_ff_and_e|FF&E supply — beds, tables, chairs|hos_loose_ffe|n|1|H|FF&E|bed supply|table supply|chair supply|loose furniture hotel|case goods
+3|ret_gondola_shelf|Gondola / mid-floor shelving|ret_display_fixtures|n|1|R|gondola|shelf unit|floor shelving|product rack|display rack|gondola shelving
+@R 4500:0/4500:0/4500:0
+3|ret_wall_shelving|Wall shelving system|ret_display_fixtures|rf|1|R|wall shelving|wall racking|slotwall|wall display|pegboard wall|wall fixture
+@R 850:0/850:0/850:0
+3|ret_display_table|Display table / plinth|ret_display_fixtures|n|1|R|display table|plinth|display plinth|product table|display podium|nesting table
+@R 3500:0/3500:0/3500:0
+3|ret_fitting_room_joinery|Fitting room joinery|ret_trial_room|n|1|R|trial room|fitting room|changing cubicle|dressing room joinery|fitting room door
+3|ret_cash_counter_joinery|Cash counter joinery|ret_cash_counter|ls|1|R|cash counter joinery|billing counter|POS counter joinery|checkout counter
+@R 0:28000/0:28000/0:28000
+3|ret_storefront_acp|Storefront ACP cladding / signage board|ret_storefront|sf|1|R|ACP cladding|aluminium composite panel|shop front cladding|ACP board|facade cladding
+3|ret_storefront_glass|Storefront glass door / glazing|ret_storefront|sf|1|R|shop front glass|storefront glazing|glass door retail|glass front|entrance glass
+3|cli_reception_counter|Reception / registration counter|cli_waiting_area|ls|1|C|clinic reception counter|registration desk|front desk clinic|OPD counter
+3|cli_waiting_seating|Waiting area seating / benches|cli_waiting_area|n|1|C|waiting chairs|patient chairs|clinic seating|waiting benches|visitor seating
+3|cli_doc_desk|Doctor's desk / examination table|cli_consultation_room|n|1|C|doctor desk|examination table|consultation table|doctor table|OPD table
+3|cli_storage_medical|Medical storage unit / cabinets|cli_consultation_room|n|1|C|medical cabinet|medicine cabinet|doctor storage|clinic storage unit|medical cupboard
+3|cli_homogeneous_vinyl|Homogeneous vinyl / anti-bacterial flooring|cli_flooring|sf|1|C|homogeneous vinyl|anti-bacterial floor|Tarkett|Forbo|medical grade vinyl|seamless flooring
+3|cli_anti_bac_paint|Anti-bacterial / washable wall paint|cli_wall_treatment|sf|1|C|anti-bacterial paint|hospital paint|washable paint|medical grade paint|anti-microbial paint
+3|edu_student_desk|Student desk and chair|edu_classroom|n|1|E|student desk|school desk|classroom desk|writing desk school|student table chair
+3|edu_teacher_podium|Teacher's podium / board|edu_classroom|n|1|E|teacher desk|podium|teacher table|staff table|blackboard|whiteboard|smart board
+3|edu_classroom_storage|Classroom storage / lockers|edu_classroom|n|1|E|classroom cupboard|student locker|classroom storage|book storage school
+3|edu_admin_workstation|Admin area workstation|edu_admin_area|n|1|E|admin desk|staff desk|office desk school|admin workstation
+3|edu_reception_counter|Reception counter|edu_reception|ls|1|E|school reception counter|front desk school|reception desk education|info counter school
+3|edu_library_shelving|Library shelving / bookracks|edu_library|n|1|E|library shelf|book rack|bookshelf school|library racking|book cabinet school
+3|edu_lab_bench|Lab bench / table|edu_lab|n|1|E|lab bench|lab table|science bench|lab furniture|laboratory bench
+3|edu_auditorium_seating|Auditorium / hall seating|edu_auditorium|n|1|E|auditorium seat|hall seating|fixed seat auditorium|lecture chair|stadium seating
+3|edu_acoustic_wall|Acoustic wall treatment|edu_auditorium|sf|1|EH|acoustic wall|fabric wall panel|acoustic board|sound treatment|NRC wall panel
+3|ind_epoxy_coating|Epoxy floor coating|ind_flooring|sf|1|I|epoxy coating|floor epoxy|industrial epoxy|self levelling epoxy|epoxy floor paint
+3|ind_anti_static_floor|Anti-static / ESD flooring|ind_flooring|sf|1|I|anti static floor|ESD floor|conductive floor|static control flooring
+3|ind_high_bay_light|High bay industrial lighting|ind_electrical|n|1|I|high bay light|industrial light|warehouse light|factory lighting|LED high bay
+3|ind_office_workstation|Factory office workstation|ind_office_area|n|1|I|factory office desk|plant office workstation|admin desk factory
+3|ind_pallet_rack|Pallet rack / storage racking|ind_storage_racks|n|1|I|pallet rack|storage rack|warehouse racking|heavy duty shelf|racking system
+4|drawer_ch_400|Drawer channel 400mm|kit_drawer_channel|n|1|AV|400mm channel|40cm drawer slide|Hettich 400|Ebco 400
+4|drawer_ch_450|Drawer channel 450mm|kit_drawer_channel|n|1|AV|450mm channel|45cm drawer|Hettich 450|standard drawer channel
+4|drawer_ch_500|Drawer channel 500mm|kit_drawer_channel|n|1|AV|500mm channel|50cm drawer|Hettich 500|deep drawer|Ebco 500
+4|gypsum_12mm|Gypsum board 12.5mm (standard)|fc_gypsum_board|sf|1|AVO|12mm gypsum|standard gypsum|12.5mm board|regular gypsum
+4|gypsum_15mm_mr|Gypsum board 15mm moisture-resistant|fc_gypsum_board|sf|1|AVO|MR board|moisture resistant gypsum|green board|15mm gypsum|bathroom gypsum
+4|tile_600x600|Vitrified tile 600×600mm|fl_vitrified_tile|sf|1|AVOR|600×600 tile|2×2 tile|2 feet tile|standard floor tile|600mm tile
+4|tile_800x800|Vitrified tile 800×800mm|fl_vitrified_tile|sf|1|AV|800×800 tile|800mm tile|2.5×2.5 tile|large format residential
+4|tile_1200x600|Vitrified tile 1200×600mm|fl_vitrified_tile|sf|1|AVO|1200×600 tile|4×2 tile|large format tile|slab tile|plank tile
+4|tile_1800x900|Vitrified tile 1800×900mm (slab)|fl_vitrified_tile|sf|1|VH|slab tile|1800mm tile|large slab|full slab tile|book match tile
+4|paint_economy|Wall paint — economy emulsion|wt_emulsion_paint|sf|1|AVO|economy paint|Tractor Emulsion|Apex Lite|budget paint|regular emulsion
+4|paint_premium|Wall paint — premium emulsion|wt_emulsion_paint|sf|1|AVO|premium emulsion|Royale|Silk Emulsion|Dulux Easy Clean|Velvet Touch
+4|paint_luxury|Wall paint — luxury emulsion|wt_emulsion_paint|sf|1|AV|luxury paint|Royale Aspira|Nilaya|Impressions|designer paint
+4|laminate_economy|Laminate — economy grade|kit_shutter_laminate|sf|1|AV|economy laminate|budget laminate|standard laminate|0.8mm laminate
+4|laminate_premium|Laminate — premium grade|kit_shutter_laminate|sf|1|AV|premium laminate|1mm laminate|Merino premium|Greenlam premium|Royale Touche
+4|laminate_luxury|Laminate — luxury / designer|kit_shutter_laminate|sf|1|AV|designer laminate|texture laminate|metallic laminate|skin feel laminate|Formica luxury
+4|glass_partition_framed|Glass partition — framed|wt_glass_partition|sf|1|OR|framed glass partition|aluminium frame glass|system partition|framed glazing
+4|glass_partition_frameless|Glass partition — frameless|wt_glass_partition|sf|1|O|frameless glass|structural glazing|patch fitting glass|all-glass partition
+4|workstation_budget|Workstation — budget grade|off_workstation_linear|n|1|O|economy workstation|budget desk|basic workstation|standard workstation
+4|workstation_premium|Workstation — premium grade|off_workstation_linear|n|1|O|premium workstation|high-end desk|aluminium leg workstation|Godrej|Herman Miller
+4|ply_bwr_commercial|Carcass ply — BWR commercial grade|kit_carcass_ply|sf|1|AV|BWR ply|commercial ply|standard ply|regular plywood|economy ply
+4|ply_bwp_marine|Carcass ply — BWP marine grade|kit_carcass_ply|sf|1|AV|BWP ply|marine ply|710 grade|waterproof ply|boiling waterproof
+4|granite_indian|Granite — Indian origin|kit_countertop_granite|sf|1|AV|Indian granite|local granite|Black Pearl|Steel Grey|Tan Brown|Indian Black
+4|granite_imported|Granite — imported|kit_countertop_granite|sf|1|AV|imported granite|Italian granite|Brazilian granite|exotic granite|imported stone top
+3|villa_dining_table|Dining table (custom joinery)|villa_dining_area|n|1|V|dining table|custom dining|villa dining|dining set|8 seater dining|6 seater dining
+3|villa_bar_unit|Bar unit / drinks cabinet|villa_dining_area|sf|1|V|bar unit|drinks cabinet|bar cabinet|liquor cabinet|mini bar villa|home bar
+3|villa_ht_screen|Projection screen / AV system|villa_home_theatre|ls|1|V|projection screen|AV system|home theatre screen|projector setup|4K screen|media room screen
+3|villa_ht_acoustic|Home theatre acoustic panels|villa_home_theatre|sf|1|V|home theatre acoustic|media room panels|soundproofing|acoustic wall HT|sound panels
+3|villa_ht_seating|Recliner seating (home theatre)|villa_home_theatre|n|1|V|recliner sofa|theatre seating|home cinema seat|recliner chair HT
+3|villa_gym_flooring|Gym flooring (rubber / foam)|villa_gym_room|sf|1|V|gym flooring|rubber mat|foam mat|gym mat|exercise mat|gym floor tiles
+3|villa_gym_mirror|Gym wall mirrors|villa_gym_room|sf|1|V|gym mirror|workout mirror|exercise room mirror|wall mirror gym
+3|villa_bath_vanity|Master bath vanity unit|villa_bathroom_master|n|1|V|master bathroom vanity|attached bath vanity|en-suite vanity|master bath cabinet
+3|villa_bath_fittings|Master bath CP fittings|villa_bathroom_master|n|1|V|bath fittings master|shower system|rain shower|Jaquar master bath|bath shower set
+3|villa_bath_tiles|Bathroom tiles (full)|villa_bathroom_master|sf|1|V|bathroom tiles|bath wall tiles|floor tiles bathroom|villa bathroom tiles
+3|off_grid_ceiling|Modular grid ceiling (T-bar)|off_false_ceiling|sf|1|OE|T-bar ceiling|grid ceiling office|Armstrong ceiling|lay-in ceiling office|suspended ceiling
+3|off_toilet_counter|Toilet counter / vanity|off_toilet_block|n|1|O|office toilet vanity|WC counter|washroom counter|toilet joinery office
+3|off_signage_board|Signage board / dimensional letters|off_signage|n|1|OR|sign board|dimensional letters|LED signage|backlit signage|company signage
+3|off_av_projector|Projector / screen setup|off_av_systems|n|1|OE|projector|screen|conference projector|office projector|presentation screen
+3|off_feature_wall_panel|Feature wall panel / brand graphic|off_feature_wall|sf|1|O|feature wall|brand wall|logo wall|office mural|brand graphic wall
+3|off_vinyl_flooring|Vinyl / LVT office flooring|off_flooring|sf|1|O|vinyl flooring office|LVT office|luxury vinyl office|carpet tile office|SPC flooring office
+3|ret_vinyl_floor|Retail vinyl / LVT flooring|ret_flooring|sf|1|R|retail flooring vinyl|LVT retail|SPC retail floor|vinyl retail
+3|ret_wall_paint|Retail wall paint / finish|ret_wall_treatment|sf|1|R|retail wall paint|shop wall finish|wall painting retail
+3|ret_track_spot|Track / accent lighting|ret_lighting|n|1|R|track light retail|accent light|spot light retail|product light|retail spotlight
+3|ret_electrical_points|Retail electrical points|ret_electrical|n|1|R|retail electrical|shop plug point|display electrical|POS electrical point
+3|cli_gypsum_ceiling|Washable gypsum ceiling|cli_false_ceiling|sf|1|C|clinic ceiling gypsum|washable ceiling|wipeable ceiling clinic|medical ceiling
+3|cli_mineral_ceiling|Mineral fibre ceiling tiles|cli_false_ceiling|sf|1|CEO|mineral fibre board|mineral ceiling tile|acoustic tile ceiling|lay-in ceiling clinic
+3|cli_nurse_counter|Nurses counter / workstation|cli_nurses_station|ls|1|C|nursing station counter|nurse desk|medical workstation counter|nurse counter joinery
+3|cli_pharmacy_counter|Pharmacy / dispensary counter|cli_pharmacy|ls|1|C|pharmacy counter|dispensary counter|medicine counter joinery|drug store counter
+3|cli_procedure_table|Procedure room table / joinery|cli_procedure_room|ls|1|C|procedure table|treatment table|minor OT table|exam table procedure
+3|cli_wayfinding_sign|Wayfinding signs / room numbers|cli_signage|n|1|C|wayfinding signage|room number sign|clinic sign|directional sign|door sign clinic
+3|edu_vinyl_floor|Vinyl flooring (school)|edu_flooring|sf|1|E|school vinyl floor|homogeneous vinyl school|anti-skid vinyl education|durable vinyl floor
+3|edu_wall_paint|Washable wall paint (school)|edu_wall_treatment|sf|1|E|school wall paint|washable emulsion|chalkboard paint|whiteboard paint|school colour scheme
+3|edu_acoustic_ceiling|Acoustic ceiling (classroom)|edu_false_ceiling|sf|1|E|classroom acoustic ceiling|mineral board ceiling school|acoustic grid ceiling|sound absorbing ceiling school
+3|edu_canteen_counter|Canteen serving counter|edu_canteen|rf|1|E|canteen counter|serving counter school|food counter|mess counter
+3|edu_washroom_joinery|Washroom vanity / joinery|edu_washrooms|n|1|E|school washroom joinery|toilet counter school|WC counter education
+3|edu_projector_av|Projector / smartboard / AV|edu_electrical|n|1|E|projector school|smartboard|interactive board|AV classroom|school projector
+3|ind_office_flooring|Office area flooring (industrial)|ind_flooring|sf|1|I|factory office floor|plant office flooring|admin area flooring industrial
+3|ind_reception_counter|Factory reception counter|ind_reception|ls|1|I|factory reception desk|plant entrance counter|visitor counter industrial
+3|ind_wall_paint|Industrial / epoxy wall paint|ind_wall_treatment|sf|1|I|factory wall paint|epoxy wall paint|industrial wall coating|warehouse wall paint
+3|ind_washroom_joinery|Washroom / change room joinery|ind_washrooms|ls|1|I|locker room joinery|change room fittings|worker washroom counter|industrial toilet joinery
+3|ind_canteen_counter|Canteen serving counter (industrial)|ind_canteen|rf|1|I|factory canteen counter|worker dining counter|industrial canteen|mess counter factory
+3|ind_grid_ceiling|Grid ceiling (office area)|ind_false_ceiling|sf|1|I|industrial office ceiling|factory office grid ceiling|admin area ceiling factory
+3|civ_tile_breaking|Tile breaking / floor hacking|apt_civil_work|sf|1|AV|tile breaking|floor hacking|old tile removal|tile demolition|floor breaking
+3|civ_wall_hacking|Wall hacking / demolition|apt_civil_work|sf|1|AV|wall hacking|wall demolition|wall breaking|masonry removal|plaster removal
+3|civ_waterproofing|Waterproofing / chemical treatment|apt_civil_work|sf|1|AV|waterproofing|chemical waterproofing|DR. Fixit|Pidilite|bathroom waterproofing|terrace waterproofing
+3|bld_roller_blind|Roller blinds|apt_window_blinds|sf|1|AVO|roller blind|roller shade|window roller|sunscreen blind|blackout roller
+3|bld_zebra_blind|Zebra / dual shade blinds|apt_window_blinds|sf|1|AV|zebra blind|dual shade|day night blind|combi blind|vision blind
+3|bld_curtain_rod|Curtain rods / track|apt_window_blinds|rf|1|AV|curtain rod|curtain track|curtain rail|drape track|curtain pole
+3|lf_modular_sofa|Modular sofa (supply)|apt_loose_furniture|n|1|AV|sofa|modular sofa|L shape sofa|sectional sofa|3 seater sofa|2 seater sofa
+3|lf_bed_frame|Bed frame (supply)|apt_loose_furniture|n|1|AV|bed|bed frame|platform bed|king size bed|queen bed|hydraulic bed
+3|lf_dining_set|Dining table + chairs (supply)|apt_loose_furniture|n|1|AV|dining set|dining table chairs|dining table|6 seater dining|4 seater dining
+3|lt_pendant|Pendant light fixture|apt_lighting_fixtures|n|1|AV|pendant light|hanging light|pendant lamp|cluster pendant|globe pendant
+3|lt_chandelier|Chandelier / statement light|apt_lighting_fixtures|n|1|AVH|chandelier|statement light|decorative chandelier|crystal chandelier|LED chandelier
+3|sf_rug|Area rug / carpet|apt_soft_furnishing|n|1|AV|rug|area rug|carpet rug|floor rug|hand tufted rug|flatweave rug
+3|sf_cushion_set|Cushions / throw pillows|apt_soft_furnishing|n|1|AV|cushions|throw pillows|decorative cushion|sofa cushion|accent pillow

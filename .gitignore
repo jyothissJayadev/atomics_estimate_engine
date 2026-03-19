@@ -1,0 +1,21 @@
+node_modules/
+.env
+*.env.local
+
+# Seed data (canonical JSON is large and version-controlled separately)
+apps/backend/seed/canonical_nodes_complete.json
+apps/backend/seed/global_section_stats.json
+apps/backend/seed/raw_estimates/*.json
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp

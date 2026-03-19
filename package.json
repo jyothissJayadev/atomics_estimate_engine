@@ -1,0 +1,14 @@
+{
+  "name": "atomics-estimate-engine",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=apps/backend",
+    "seed": "npm run seed --workspace=apps/backend",
+    "test": "npm test --workspaces"
+  }
+}
